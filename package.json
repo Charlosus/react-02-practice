@@ -1,7 +1,7 @@
 {
-  "name": "basic-setup",
+  "name": "react-02-practice",
   "private": true,
-  "homepage": "https://Charlosus.github.io/basic-setup",
+  "homepage": "https://Charlosus.github.io/react-02-practice",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

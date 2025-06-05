@@ -1,35 +1,61 @@
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// easiests way to add event is to add onClick to tag 
+// function App() {
+//   const foo = () => {
+//     console.log("clicked");
+    
+//   }
+//  return <button onClick={foo}>count</button>
+// }
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+// function App() {
+//   const sayHi = (name, e) => {
+//     console.log("Hi my name is ", name, e);
+    
+//   }
+//  return <button onClick={(event) => sayHi("Bob", event)}>count</button>
+// }
 
+// one of special thing in react is useState 
+
+// useState is an array of variable and function  // 0,function ()
+
+// when event is activated function will operate on value 
+
+// we can destructuriaze array of useState and use its parameters to for example count clicks 
+
+// const App = () => {
+//   const [counter, setCounter] = useState(0);
+//   // thant to use state our elements will rerender and display new value 
+//   // if we would do something like this 
+//   // let c = 0
+//   // const increment = () => c = c + 1 
+//   // and added c as child to button this will count clicks but 
+//   // state of button will remain as 0 
+//   // resault will be seen only in console not on app
+
+//   // const increment = () => setCounter((prevState) =>{ return (prevState + 1)})
+  
+//   const increment = () => setCounter((counter) => counter + 1)
+//   return <button onClick={increment}>count {counter}</button>
+// }
+
+// const App = () => {
+//   const [name, setName] = useState("Bob")
+//   const changeName = () => {
+//     setName("Ala")
+//   }
+//   return (<div>
+//     <p>{name}</p>
+//     <button onClick={changeName}>Change name</button>
+//   </div>)
+// }
+
+// 
 export default App
+
