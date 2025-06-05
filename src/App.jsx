@@ -56,6 +56,34 @@ import './App.css'
 //   </div>)
 // }
 
-// 
+// parent will hold the state 
+
+// function ToDo({name, remove}) {
+//   return (
+//     <div>
+//       {name}
+//       <button onClick={() => remove(name)}>Remove</button>
+//     </div>
+//   );
+// };
+
+// function App () {
+//   const [todos, setToDos] = useState([ "task1", "task2" ])
+
+//   const removeTodo = (todoRemove) => {
+//     setToDos((prevState) => prevState.filter((todo) => todo !== todoRemove))
+//   }
+//   return (
+//     <div>
+//       {/* <ToDo name={todos[0]} remove={removeTodo}/>
+//       <ToDo name={todos[1]} remove={removeTodo}/> */}
+//       {todos.map((todo) => (
+//         <ToDo key={todo} name={todo} remove={removeTodo}/>
+//       ))}
+
+//     </div>
+//   )
+
+// }
 export default App
 
